@@ -6,13 +6,14 @@ import Home from './components/alt/Home';
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/scene" element={<Scene />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Main />} />
-      </Routes>
-    </>
+    // <>
+    //   <Routes>
+    //     <Route path="/scene" element={<Scene />} />
+    //     <Route path="/home" element={<Home />} />
+    //     <Route path="/" element={<Main />} />
+    //   </Routes>
+    // </>
+    <Main />
   );
 }
 
