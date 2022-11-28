@@ -1,0 +1,150 @@
+body {
+  background-color: rgb(188, 236, 218);
+}
+
+.projects-wrap {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.app-routes {
+  position: relative;
+  width: 100vw;
+}
+
+.wrap-box {
+  position: fixed;
+  left: 160px;
+  right: 280px;
+  top: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 90vh;
+  overflow: auto;
+  z-index: 5;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.wrap-box::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-label {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+  top: 0;
+  background-color: rgb(70, 70, 70);
+  color: white;
+  width: 100%;
+  box-shadow: 0 0 22px 8px;
+  z-index: 6;
+}
+
+.projects {
+  font-family: 'Silkscreen';
+  animation-delay: 2s;
+  animation: animate-projects 4s linear;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.projects:hover {
+  scale: 1.05;
+  cursor: pointer;
+  text-shadow: 1px 1px #ff392c;
+}
+
+@keyframes animate-projects{
+  0%{
+    transform: translateX(500px);
+  }
+  20%{
+    transform: translateX(400px);
+  }
+  40%{
+    transform: translateX(300px);
+  }
+  60%{
+    transform: translateX(200px);
+  }
+  80%{
+    transform: translateX(100px)
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.stack-wrap {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  width: 20vw;
+}
+
+.about-wrap {
+  position: relative;
+  z-index: 15;
+  height: 310px;
+}
+
+.faceblob {
+    border: 6px solid var(--teal);
+}
+
+.mark {
+    position: fixed;
+    bottom: 0;
+    right: 285px;
+    color: white;
+    z-index: 0;
+    opacity: 0.6;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.header-box {
+  position: fixed;
+  height: auto;
+  top: 220px;
+  z-index: 45;
+  /* left: 10px; */
+  background-color: var(--teal);
+  opacity: 1;
+  width: 140px;
+  padding: 0 10px;
+  /* height: 210px; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  position: relative;
+  bottom: 0;
+  height: 30px;
+  /* width: auto; */
+  margin: 10px;
+  /* z-index: 5; */
+}
+
+.logo-img:hover {
+  scale: 1.2;
+}
+
+.logo-img:active {
+  scale: 0.98;
+}

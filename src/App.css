@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&family=Inconsolata&family=Kanit&family=Silkscreen&display=swap');
+
+/* theme colors:
+
+  --light-blue: #47e6ff;
+  complementary:
+  --orange: #ff7b47;
+
+  monochromatic:
+  --teal: #6ed6e6;
+
+  analogous:
+  --blue: #5347ff;
+  --green: #47ff60;
+
+  split complementary:
+  --orange-plus: #ffa947;
+  --reddish: #ff4d47;
+
+  triadic:
+  --yellow: #ffd747;
+  --pink: #ff4797;
+
+  tetradic:
+  --orange
+  --yellow
+  --purple: #af47ff;
+  */
+
+:root {
+  --light-blue: #47e6ff;
+  --orange: #ff7b47;
+  --teal: #6ed6e6;
+  --blue: #5347ff;
+  --green: #47ff60;
+  --orange-plus: #ffa947;
+  --reddish: #ff4d47;
+  --yellow: #ffd747;
+  --pink: #ff4797;
+  --purple: #af47ff;
+}
+
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 7fr 2fr;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+/* <-----     ---     ---  !! DO NOT EDIT below this comment !!  ---     ---     -----> */
+/* image and animation */
+
+.faceblob {
+  position: fixed;
+  top: 30px;
+  left: 4px;
+  height: 160px;
+  width: 140px;
+  background-image: url('../public/ryanparker34.png');
+  background-color: transparent;
+  background-size: cover;
+  animation: animate-faceblob 8s linear infinite;
+  z-index: 3;
+}
+
+.faceblob:hover {
+  background-image: url('../public/hire-me.png');
+}
+
+@keyframes animate-faceblob {
+  0%,
+  100% {
+    border-radius: 50% 55% 70% 35% / 30% 70% 30% 80%;
+  }
+  25% {
+    border-radius: 20% 35% 80% 55% / 80% 50% 70% 30%;
+  }
+  50% {
+    border-radius: 80% 75% 60% 75% / 60% 70% 30% 80%;
+  }
+  25% {
+    border-radius: 40% 65% 60% 65% / 30% 50% 70% 30%;
+  }
+}
