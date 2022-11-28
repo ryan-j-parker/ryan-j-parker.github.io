@@ -123,8 +123,6 @@ h2 {
   text-decoration: none;
   color: var(--green);
   background-color: var(--purple);
-  /* width: 200px; */
-  /* padding: 0 20px; */
   text-align: center;
   font-size: 1.2rem;
   word-break: keep-all;
